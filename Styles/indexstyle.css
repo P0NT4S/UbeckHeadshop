@@ -1,0 +1,206 @@
+:root{
+    --roxo: #892EEB;
+    --verde: #2FEB6A;
+
+    --f-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --f-destaque: "Bebas Neue", sans-serif;
+}
+
+/* BANER --------------------------------------------- */
+#baner{
+    background-color: var(--verde);
+    width: 100%;
+    height: 800px;
+    font-size: 1.5em;
+    color: white;
+    overflow: hidden;
+}
+
+    #banerImg{
+        position: relative;
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+        opacity: 0.8;
+        transition: 0.5s ease-in-out;
+    }
+
+    #banerTxt{
+        position: absolute;
+        text-align: center;
+        top: 0;
+        right: 50%;
+        translate: 50%;
+        padding-top: 20%;
+    }
+
+        #banerTxt h1{    
+            font-size: 7em;
+            line-height: 0.8em;
+        }
+
+    #baner:hover #banerImg{
+        filter: blur(3px);
+        filter: brightness(0.8);
+        opacity: 0.7;
+        
+    }
+
+/* CATEGORIAS --------------------------------------------- */
+#catNav{
+    display: grid;
+    width: 100%;
+    height: 250px;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+
+}
+
+    #titulo{ 
+        grid-column:1/5;
+        grid-row: 1/2;
+        padding-top: 15px;
+        position: absolute;
+        font-size: 2em;
+        color: var(--roxo);
+    }
+
+        #titulo::after{
+            position: absolute;
+            content: " ";
+            width: 120%;
+            height: 4px;
+            background-color: var(--verde);
+            bottom: 1px;
+            left: -10%;
+        }
+
+    .categorias{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        grid-row: 2/3;
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+        background-color: #892EEB;
+        margin: 20px 0;
+        overflow: hidden
+    }
+
+        .catTxt{
+            position: absolute;
+            top: 50%;
+            translate:0 -50%;
+            color: white;
+            font-family: var(--f-destaque);
+            font-size: 2em;
+
+        }
+
+            .catTxt::after{
+                position: absolute;
+                content: " ";
+                width: 0;
+                height: 4px;
+                background-color: var(--verde);
+                bottom: 4px;
+                left: 0px;
+                transition: 0.5s ease-in-out;
+            }
+
+                .categorias:hover .catTxt::after{
+                    width: 100%;                    
+                }
+
+        .catImg{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            opacity: 0.7;
+            transition: 0.2s ease-in-out;
+        }
+
+            .categorias:hover .catImg{
+                filter: blur(2px);
+                transition: 0.5s ease-in-out;
+            }
+
+        #bolar{
+            grid-column: 1/2;
+        }
+
+        #cachimbos{
+            grid-column: 2/3;
+        }
+
+        #charutos{
+            grid-column: 3/4;
+        }
+
+        #narguiles{
+            grid-column: 4/5;
+        }
+        
+        #kits{
+            grid-column: 5/6;
+        }
+
+/* DESTAQUES --------------------------------------------- */
+#destaques{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 100%;
+    margin: 30px 0;
+}
+    #destaqueTitulo{
+        width: 100%;
+        background-color: var(--verde);
+        text-align: center;
+        color: white;
+    }
+
+    .prodDest{
+        position: relative;
+        width: 400px;
+        height: 500px;
+        background-color: #892EEB;
+        overflow: hidden;
+    }
+        .imgDest{
+            width: 400px;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .txtDest{
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            width: 400px;
+            height: 200px;
+            background-color: var(--verde);
+            position: absolute;
+            top: 450px;
+            color: white;
+            transition: 0.3s ease-in-out;
+        }
+            .prodDest:hover .txtDest{
+                top: 300px;
+                transition: 0.5s ease-in-out;
+            }
+            .nome ,.preco{
+                font-family: var(--f-destaque);
+                font-size: 2em;
+                padding: 10px;
+            }
+
+            .descri{
+                font-family: var(--f-padrao);
+                font-size: 1.3em;
+                grid-column: 1/6;
+                text-align: justify;
+                padding: 10px;
+            }
