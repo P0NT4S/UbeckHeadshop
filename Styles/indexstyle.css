@@ -151,6 +151,7 @@
 #destaques{
     display: grid;
     grid-template-columns: auto auto auto;
+    row-gap: 30px;
     justify-content: space-evenly;
     justify-items: center;
     width: 100%;

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
 
 /* GERAL ---------------------------------------------*/
 :root{
@@ -9,6 +10,7 @@
 
     --f-padrao: Arial, Verdana, Helvetica, sans-serif;
     --f-destaque: "Bebas Neue", sans-serif;
+    --f-logo: "Sedgwick Ave Display";
 }
 
 *{
