@@ -10,19 +10,19 @@
 #baner{
     background-color: var(--verde);
     width: 100%;
-    height: 800px;
+    height: 85vh;
     font-size: 1.5em;
     color: white;
     overflow: hidden;
 }
 
     #banerImg{
-        position: relative;
-        width: 100%;
-        height: 800px;
+         width: 100%;
+        height: 85vh;
         object-fit: cover;
         opacity: 0.8;
-        transition: 0.5s ease-in-out;
+        transform: translate(-50,-50);
+        transition: 0.5s ease-in-out
     }
 
     #banerTxt{
@@ -31,7 +31,7 @@
         top: 0;
         right: 50%;
         translate: 50%;
-        padding-top: 20%;
+        padding-top: 30vh;
     }
 
         #banerTxt h1{    
@@ -96,7 +96,8 @@
             color: white;
             font-family: var(--f-destaque);
             font-size: 2em;
-
+            text-decoration: none;
+            font-weight: bold;
         }
 
             .catTxt::after{

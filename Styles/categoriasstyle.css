@@ -1,0 +1,92 @@
+:root{
+    --roxo: #892EEB;
+    --verde: #2FEB6A;
+
+    --f-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --f-destaque: "Bebas Neue", sans-serif;
+    --f-logo: "Sedgwick Ave Display";
+}
+
+
+.descricao{
+    margin: auto;
+    padding: 90px 15% 0 15%;
+    display: flex;
+    background-color: #892EEB;
+}
+    .desc_icon{
+        width: 120px;
+        height: 120px;
+        padding: 10px 10px 10px 0;
+    }
+
+    .desc_txt{
+        position: relative;
+        text-align: justify;
+        align-self: center;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: white;
+    }
+
+
+.titulo{ 
+    width: 100%;
+    background-color: var(--verde);
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+    #destaques{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 30px;
+        justify-content: space-evenly;
+        justify-items: center;
+        width: 100%;
+        margin: 30px 0;
+    }
+
+        .prodDest{
+            position: relative;
+            width: 400px;
+            height: 500px;
+            background-color: #892EEB;
+            overflow: hidden;
+        }
+            .imgDest{
+                width: 400px;
+                height: 500px;
+                object-fit: cover;
+            }
+
+            .txtDest{
+                display: grid;
+                grid-template-columns: 4fr 1fr;
+                width: 400px;
+                height: 200px;
+                background-color: var(--verde);
+                position: absolute;
+                top: 450px;
+                color: white;
+                transition: 0.3s ease-in-out;
+            }
+                .prodDest:hover .txtDest{
+                    top: 300px;
+                    transition: 0.5s ease-in-out;
+                }
+                .nome ,.preco{
+                    font-family: var(--f-destaque);
+                    font-size: 2em;
+                    padding: 10px;
+                }
+
+                .descri{
+                    font-family: var(--f-padrao);
+                    font-size: 1.3em;
+                    grid-column: 1/6;
+                    text-align: justify;
+                    padding: 10px;
+                    
+                }
