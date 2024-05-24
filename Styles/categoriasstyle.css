@@ -4,7 +4,6 @@
 
     --f-padrao: Arial, Verdana, Helvetica, sans-serif;
     --f-destaque: "Bebas Neue", sans-serif;
-    --f-logo: "Sedgwick Ave Display";
 }
 
 
@@ -27,6 +26,7 @@
         font-size: 1.1em;
         font-weight: bold;
         color: white;
+        padding-bottom: 10px;
     }
 
 
@@ -38,7 +38,7 @@
     position: relative;
 }
 
-    #destaques{
+    #produtos{
         display: grid;
         grid-template-columns: auto auto auto;
         row-gap: 30px;
@@ -48,20 +48,20 @@
         margin: 30px 0;
     }
 
-        .prodDest{
+        .produto{
             position: relative;
             width: 400px;
             height: 500px;
             background-color: #892EEB;
             overflow: hidden;
         }
-            .imgDest{
+            .prod_img{
                 width: 400px;
                 height: 500px;
                 object-fit: cover;
             }
 
-            .txtDest{
+            .prod_txt{
                 display: grid;
                 grid-template-columns: 4fr 1fr;
                 width: 400px;
@@ -72,21 +72,20 @@
                 color: white;
                 transition: 0.3s ease-in-out;
             }
-                .prodDest:hover .txtDest{
+                .produto:hover .prod_txt{
                     top: 300px;
                     transition: 0.5s ease-in-out;
                 }
-                .nome ,.preco{
+                .prod_nome ,.prod_preco{
                     font-family: var(--f-destaque);
                     font-size: 2em;
                     padding: 10px;
                 }
 
-                .descri{
+                .prod_descri{
                     font-family: var(--f-padrao);
                     font-size: 1.3em;
                     grid-column: 1/6;
                     text-align: justify;
                     padding: 10px;
-                    
                 }
