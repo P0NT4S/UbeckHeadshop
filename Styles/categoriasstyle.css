@@ -24,7 +24,7 @@
         text-align: justify;
         align-self: center;
         font-size: 1.1em;
-        font-weight: bold;
+        font-weight: lighter;
         color: white;
         padding-bottom: 10px;
     }
@@ -39,8 +39,8 @@
 }
 
     #produtos{
-        display: grid;
-        grid-template-columns: auto auto auto;
+        display: flex;
+        flex-wrap: wrap;
         row-gap: 30px;
         justify-content: space-evenly;
         justify-items: center;
